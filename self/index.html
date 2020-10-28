@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Amit Kumar</title>
+</head>
+<body>
+    
+    <section id="banner">
+        <img src="images/logo.png" class="logo">
+        <div class="banner-text">
+            <h1><span>A</span>
+            <span>m</span>
+            <span>i</span>
+            <span>t</span>
+            <span>K</span>
+            <span>u</span>
+            <span>m</span>
+            <span>a</span>
+            <span>r</span></h1>
+            <p>A web Developer</p>
+        </div>
+        <div class="social-menu">
+            <ul>
+                <li><a href="https://www.instagram.com/amit_kumar1173/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100003527575046"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/Amit1173"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://twitter.com/Amit_Kumar_2211"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/amit-kumar-8427291a2"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Download CV</a></li>
+            </ul>
+        </nav>
+    </div>
+ <div id="menubtn">
+     <img src="images/menu.png" id="menu">
+</div>
+<!--about-->
+<div class="about-container">
+	<!--img-->
+		<img src="images/self.jpg"/>
+	<!--about-me-text-->
+		<div class="about-text">
+		<p>About Me</p>
+		<p>Devolper & Designer</p>
+		<p>Hello,I am currently pursuing my Bachelors Degree in Computer Applications from Chandigarh university.I enjoy Coding as well as designing.I always push myself for exploring new and intresting things.</p>
+		<p>I am a Devolper and also a Designer,being consistent to my passion <span>I've developed few web pages which you can find in the projects section</span>.We can work together,follow me or fill up the form and let's get started.</p>
+		<button><a href="#">Let's Work</a></button>
+		</div>
+</div>
+<!--Projects-->
+<section="service">
+  <div class="title">
+      <p>Projects</p>
+  </div>
+  <div class="service-box">
+      <div class="single-service">
+          <img src="images/self.jpg">
+          <div class="overlay"></div>
+          <div class="service-desc">
+              <h3>Project 1</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          </div>
+      </div>
+      <div class="single-service">
+        <img src="images/self.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Project 2</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+        </div>
+      </div>
+      <div class="single-service">
+        <img src="images/self.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Project 3</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+        </div>
+      </div>
+      <div class="single-service">
+        <img src="images/self.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Project 4</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+        </div>
+      </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+<script>
+    var menubtn=document.getElementById("menubtn")
+    var sidenav=document.getElementById("sidenav")
+    var menu=document.getElementById("menu")
+    sidenav.style.right ="-250px";
+    menubtn.onclick = function(){
+        if(sidenav.style.right=="-250px"){
+            sidenav.style.right= "0";
+            menu.src ="images/close.png";
+        }
+        else{
+            sidenav.style.right ="-250px";
+            menu.src ="images/menu.png";
+           
+        }
+    }
+</script>
+
+</body>
+</html>
